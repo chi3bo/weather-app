@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+
+    <div id="home" class=" vh-100">
+
+        <!-- ------------------------       start navbar        ------------------------ -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+
+                <a class="navbar-brand d-flex justify-content-center align-items-center " href="#">
+                    <img src="media/logo.png" alt="" class="pe-2">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <span class="logoText">weather</span>
+                        <span class="logoSupText">forecast</span>
+                    </div>
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item item1 px-md-4 mx-1 rounded-5">
+                            <a class="nav-link link1" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-md-4 mx-1 rounded-5">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item px-md-4 mx-1 rounded-5">
+                            <a class="nav-link" href="#">live camera</a>
+                        </li>
+                        <li class="nav-item px-md-4 mx-1 rounded-5">
+                            <a class="nav-link" href="#">photos</a>
+                        </li>
+                        <li class="nav-item px-md-4 mx-1 rounded-5">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ===========================       end navbar        =========================== -->
+
+
+
+        <!-- =======================      start main content        ========================= -->
+        <div class="container  ">
+            <div class="updiv d-flex flex-column justify-content-center align-items-center ">
+                <input type="text" class="mySearch mx-auto" placeholder="search ...">
+            </div>
+            <div class="downDiv row d-flex justify-content-around py-2 align-items-center overflow-hidden">
+
+
+                <div class="today day col-lg-4  p-3 ">
+                    <div class="innerdiv overflow-hidden">
+                        <div class="upper">
+                            <p class=" m-0 text-center">sunday</p>
+                        </div>
+                        <div class="downer d-flex justify-content-center day1">
+                            <p> cairo </p>
+                            <div class="d-flex justify-content-center align-items-center w-100 py-3">
+                                <p class="currentTemp text-center px-3"> 19<sup>&#9900;</sup><span>c</span></p>
+                                <img src="media/113.png" alt="weather condition">
+                            </div>
+                            <div class="d-flex justify-content-center w-100">
+                                <p class="px-2"> sunny </p>
+                                <p class="px-2"> 11 km </p>
+                            </div>
+                            <p class="px-2 mx-auto fs-6 fw-light"> 15-10-2024 </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="next day col-lg-4  p-3 ">
+                    <div class="innerdiv overflow-hidden ">
+                        <div class="upper day2-Date ">
+                            <p class=" m-0 text-center">sunday</p>
+                        </div>
+                        <div class="downer day2 d-flex justify-content-center align-items-center position-relative">
+                            <img src="media/113.png" alt="" class="myiconnext">
+                            <p class="nextTemp text-center"> 19 c</p>
+                            <p class="smalldetails bottom-20"> 15-10-2024 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="afterNex day col-lg-4  p-3 ">
+                    <div class="innerdiv  overflow-hidden">
+                        <div class="upper day3-Date ">
+                            <p class=" m-0 text-center">sunday</p>
+                        </div>
+                        <div class="downer day3 d-flex justify-content-center align-items-center position-relative">
+                            <img src="media/113.png" alt="" class="myiconnext">
+                            <p class="nextTemp text-center"> 19 c</p>
+                            <p class="smalldetails bottom-20"> 15-10-2024 </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- =======================      end main content        ========================= -->
+
+
+
+
+        <!-- ------------------------ start footer ------------------------ -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-left  position-relative">
+
+                    <input type="email" class="footerInput  " placeholder="Enter your email to subscribe...">
+                    <button class="btn subscribeButton btn-primary translate-middle-y"> subscribe </button>
+                </div>
+
+                <div class="footer-right d-flex justify-content-center align-items-center">
+
+                    <div class="socialIcon"><i class="fa-brands fa-facebook"></i> </div>
+                    <div class="socialIcon"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="socialIcon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="socialIcon"><i class="fa-brands fa-github"></i></div>
+
+
+
+
+
+                </div>
+
+            </div>
+            <div class="text-secondary text-center py-2  ">Copyright 2024 route. Designed by bn-shaaban. All rights
+                reserved</div>
+        </div>
+        <!-- ------------------------ end footer ------------------------ -->
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

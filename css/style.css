@@ -1,0 +1,264 @@
+body {
+    background-image: url(../media/pexels-brett-sayles-1431822.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.updiv {
+    height: 200px;
+}
+
+.mySearch {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+
+.mySearch::placeholder {
+    color: rgba(255, 255, 255, 0.631);
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+.day {
+    height: 380px;
+}
+
+.currentTemp {
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+.nextTemp {
+    font-size: 3rem;
+}
+
+.innerdiv {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.68);
+
+
+}
+
+.upper {
+    background-color: white;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downer {
+    background-color: rgba(0, 0, 0, 0.508);
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    padding: 0 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.heroDiv {
+    position: relative;
+    left: 10%;
+    padding: 20px;
+    ;
+}
+
+.downer span {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.downer p.smalldetails {
+    line-height: .2rem;
+    font-weight: 400;
+}
+
+.minTemp{
+    position: absolute;
+    bottom: 30%;
+}
+
+.bottom-30{
+    position: absolute;
+    bottom: 28%;
+}
+
+.myspace {
+    padding-inline: 10px;
+}
+
+.navbar {
+    padding-block: 40px;
+    background-color: #1e202b;
+}
+
+.logoText {
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+
+}
+
+.logoSupText {
+    font-size: 12px;
+    color: #ffffffa1;
+
+}
+
+.nav-item {
+    border: 2px transparent solid;
+    transition: all .3s;
+}
+
+a {
+    transition: all .3s;
+}
+
+.item1 {
+    border: 2px #05A2DA solid;
+}
+
+.link1 {
+    color: #05A2DA;
+}
+
+.nav-item:hover {
+    border: 2px #05A2DA solid;
+    color: #05A2DA;
+    cursor: pointer;
+}
+
+.nav-item:hover a {
+    color: #05A2DA;
+}
+
+.nav-link {
+    padding: 5px 40px;
+}
+
+.myiconnext {
+    position: absolute;
+    top: 20px;
+
+}
+
+
+/* ==========   start footer    ============ */
+.footer {
+    background-color: #1e202b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer-left {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    height: 100px;
+}
+
+.footerInput {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #303345;
+    border-radius: 30px;
+    color: #fff;
+    border-color: transparent;
+    outline: none;
+}
+
+.footerInput::placeholder {
+    color: #ffffffa1;
+}
+
+.subscribeButton {
+    padding: 10px 20px;
+    border-radius: 30px;
+    /* position-absolute top-50 end-0  */
+    position: absolute;
+    top: 50%;
+    right: 4px;
+}
+
+.footer-right {
+    /* background-color: greenyellow; */
+    width: 30%;
+}
+
+.fa-brands {
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(240, 239, 239);
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.socialIcon {
+    padding-inline: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialIcon:hover .fa-brands {
+    background-color: #05A2DA;
+    color: #fff;
+    filter: drop-shadow(0 0 5px #81dbff);
+
+
+}
+
+
+
+/* =================================    start media query =========================== */
+
+@media screen and (max-width : 992px) {
+    body {
+        /* background-size:cover; */
+        background-attachment: fixed;
+    }
+
+    .heroDiv {
+        left: 5%;
+        ;
+    }
+
+    .footer {
+        position: static;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-left {
+        width: 100%;
+        height: 100px;
+    }
+
+    .subscribeButton {
+        padding: 10px 14px;
+    }
+}
