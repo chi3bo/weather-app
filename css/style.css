@@ -1,4 +1,4 @@
-#home {
+body {
     background-image: url(../media/pexels-brett-sayles-1431822.jpg);
     background-size: cover;
     background-position: center;
@@ -233,7 +233,7 @@ a {
 /* =================================    start media query =========================== */
 
 @media screen and (max-width : 992px) {
-    .home {
+    body {
         /* background-size:cover; */
         background-attachment: fixed;
     }
