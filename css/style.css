@@ -1,4 +1,4 @@
-body {
+#home {
     background-image: url(../media/pexels-brett-sayles-1431822.jpg);
     background-size: cover;
     background-position: center;
@@ -233,7 +233,7 @@ a {
 /* =================================    start media query =========================== */
 
 @media screen and (max-width : 992px) {
-    body {
+    .home {
         /* background-size:cover; */
         background-attachment: fixed;
     }
@@ -261,4 +261,10 @@ a {
     .subscribeButton {
         padding: 10px 14px;
     }
+}
+@media screen and (max-height : 850px) {
+
+.footer {
+    position: static;
+}
 }
